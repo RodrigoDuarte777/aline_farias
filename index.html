@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="4 url=Aline fisio/index.php">
+    <link rel="icon" href="logoa.png" type="image/x-icon" />
+
+    <title>espaço fitness</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel='stylesheet'>
+</head>
+<body>
+<style>
+    body{
+        background-color:yellow;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        height:100vh;
+    }
+    .carregar{
+        font-family:'Orbitron', sans-serif;
+        font-size: 5px;
+        animation:blink .9s ease-in-out infinite;
+    }
+    @keyframes dash{
+       to{
+            stroke-dashoffset:340 ;
+
+        }
+    }
+    .tri{
+        stroke-dasharray:17;
+       animation:dash 2.5s cubic-bezier(0.35,0.04,0.63,0.95) ;
+    }
+    @keyframes blink{
+        50%{
+            opacity:0;
+
+        }
+    }
+</style>
+
+
+    <svg width="200" height="200" viewBox="0 0 40 60">
+
+        <polygon class="tri" fill="none" stroke="#000" stroke-width="1" points="16,1 32,32 1,32"/>
+        <text class="carregar" x="0" y="45" fill="#000">Carregando...</text>
+
+    </svg>
+
+</body>
+</html>
